@@ -1,0 +1,112 @@
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--dark);
+    transition: 0.5s ease;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--light);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.btn-sec{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.btn-sec:hover{
+    background: var(--primary);
+    color: var(--dark);
+    transition: 0.5s ease;
+}
+.flex-1{
+    flex: 1;
+}
+.justify_center{
+    justify-content: center;
+}
+@media (max-width:1024px){
+    header .nav-items{
+        margin-left: 10rem;
+    }
+    header .right button{
+        margin-right: 5rem;
+    }
+    header nav .left{
+        margin-left: -1rem;
+    }
+    .btn{
+        padding: 0.4rem 1.5rem;
+        font-size: 0.7rem;
+    }
+    header nav .left .branding{
+        margin-right: 0.5rem;
+        width: -75%;
+        height: -75%;
+    }
+    header nav .left .nav-items a{
+        margin-right: 1rem;
+        font-size: 15px;
+    }
+    header .right .btn{
+        justify-content: center;
+    }
+    .hero .left img{
+        width: 260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    section.about .container .left img{
+            /* width: 300px; */
+    height: 289px;
+    margin-left: 2.5rem;
+    }
+    section.about{
+        padding: 2rem 0;
+    }
+     section.services .container .card-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+     }
+     
+    section.services .container .card-wrapper .card{
+        padding: 4rem 1rem;
+    }
+    section.freelencer button{
+        font-size: 0.6rem;
+    }
+    section.freelencer h1{
+        font-size: 1.5rem;
+    }
+    header .nav-items {
+        margin-left: 1rem;
+    }
+    section.blog .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        /* justify-content: center; */
+    }
+}
