@@ -1,11 +1,11 @@
 let hamberger = document.querySelector('.hamberger');
 let times = document.querySelector(".times");
-let monileNav=document.querySelector(".mobile-nav");
-hamberger.addEventListener('click',function()
-{
+let mobileNav=document.querySelector(".mobile-nav");
+hamberger.addEventListener('click',function(){
     mobileNav.classList.add('open');
+    hamberger.style.opacity="0";
 });
-times.addEventListener('click',function()
-{
+times.addEventListener('click',function(){
     mobileNav.classList.remove('open');
+    hamberger.style.opacity="1";
 });

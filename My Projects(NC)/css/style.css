@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.main{
+    height: 100vh;
+    background-image: url('photo/images/bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    color: #4a5057;
+    font-size: 16px;
+    margin: 0 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+
+}
+.menu img{
+    height: 18px;
+}
+.contact{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #3d3d3e;
+    color: #3d3d3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+.contact:hover{
+    background-color: #4530c3;
+    color: #ffffff;
+    transition: all ease 0.3s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+}
+.box{
+    width: 220px;
+    height: 330px;
+    border-radius: 5px;
+    box-shadow: 2px 6px 30px rgba(0,0,0,0.1);
+    background-color: #f6f6f6;
+    margin: 36px;
+    position: relative;
+    
+}
+.box p{
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    color: #3d3d3e;
+}
+.slide-details p:nth-child(1){
+    font-size: 23px;
+    font-weight: 700;
+}
+.slide-details p:nth-child(2){
+    font-size: 18px;
+
+}
+.slide-details{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+    width: 100%;
+    padding-top: 1rem;
+}
+.user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3d3d3e;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.slide-details .contact{
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.slide-details .SC{
+    padding: 1.5rem 4rem;
+    margin-left: 3rem;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    margin-left: 1rem;
+}
+.fab:hover{
+    color: #4530c3;
+    transform: scale(1.1,1.1);
+
+}
+.projects-details{
+    display: flex;
+    flex-wrap: wrap;
+}
