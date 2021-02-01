@@ -982,3 +982,6 @@ header .right{
         margin-top: 2rem;
     }
 }
+.skills .bar{
+    border: 0;
+}
