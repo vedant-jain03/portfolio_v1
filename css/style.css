@@ -977,8 +977,7 @@ header .right{
 .skills .bar{
     background: none;
     height: 3px;
-    border: 1px solid rgba(4, 156, 4, 0.3);
+    border: 1px solid white;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 0 10px #28e721b3;
 }
