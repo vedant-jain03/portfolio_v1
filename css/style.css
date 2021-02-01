@@ -982,14 +982,6 @@ header .right{
         margin-top: 2rem;
     }
 }
-.skills .bar{
-    border: 0;
-}
 .skills .bar {
-    background: none;
-    height: 3px;
-    border: 0;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #28e721b3;
+    border: 0 0 white;
 }
