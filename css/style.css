@@ -681,14 +681,6 @@ header .container nav .left .branding img{
     margin: 20px 0;
     list-style: none;
 }
-.skills .bar{
-    background: none;
-    height: 3px;
-    border: 0;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0;
-}
 .bar span{
     height: 2px;
     float: left;
@@ -981,4 +973,12 @@ header .right{
         margin-left: 2rem;
         margin-top: 2rem;
     }
+}
+.skills .bar{
+    background: none;
+    height: 3px;
+    border: 1px solid rgba(0,0,0);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #28e721b3;
 }
