@@ -981,3 +981,13 @@ header .right{
     border-radius: 3px;
     overflow: hidden;
 }
+@media (max-width: 600px)
+.hero {
+   flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 600px)
+header .right .btn {
+    margin-bottom: 1rem;
+   justify-content: center;
+}
