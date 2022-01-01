@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<!-- Your Website Title -->
+	<title>Vedant Jain</title>
+	<!-- Your Website Description -->
+	<meta name="description"
+		content="This is portfolio of vedant jain. He is engineering student enthusiast about open source, web development and hackathons" />
+	<meta name="author" content="Vedant Jain">
+
+	<!-- Meta Tags for Responsiveness -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Social Media Meta Tags -->
+	<!-- <meta property="og:url" content="http://yashovardhan.dev/" /> -->
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./logo.png" />
+	<link rel="logo.png" sizes="144x144" href="{{ site.baseurl }}public/logo.png">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i" rel="stylesheet">
+
+	<!-- Bootstrap & Other CSS Files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+		integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+		crossorigin="anonymous" />
+
+	<!-- Project CSS File -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/400db8db7c.js" crossorigin="anonymous"></script>
+</head>
+
+<body onclick="colourChange()">
+	<!-- Page Wrapper -->
+	<div class="page-wrapper">
+		<!-- Header -->
+		<header>
+			<div class="logo animate">
+				<a href="#">
+					<img class="img-responsive" src="./logo.png" alt="yash" style="width: 50px; border-radius: 50%;">
+				</a>
+			</div>
+		</header>
+
+		<!-- Content Wrapper -->
+		<div class="content-wrapper">
+			<div class="content-main animate">
+				<div class="container">
+					<h1 class="page-title">Hi, Vedant Jain </h1>
+					<h2 style="font-weight: 700;">Open source | Full stack Developer</h2>
+				</div>
+			</div>
+			<!-- Background Wrapper -->
+			<div class="background-wrapper">
+				<div id="background-content"></div>
+			</div>
+		</div>
+
+		<!-- Menu -->
+		<div class="menu">
+			<button class="nav-tgl" type="button" aria-label="toggle menu">
+				<span aria-hidden="true"></span>
+			</button>
+			<div class="nav">
+				<div class="header">
+					<div class="logo animate">
+						<a href="#">
+							<img class="img-responsive" src="./logo.png" alt="yash"
+								style="width: 50px; border-radius: 50%;">
+						</a>
+					</div>
+				</div>
+				<div class="nav-content">
+					<a href="" data-toggle="modal" data-target="#modal-about" class="nav-item1">
+						<h1 class="nav-link">About</h1>
+					</a>
+					<a href="" data-toggle="modal" data-target="#modal-experience" class="nav-item2">
+						<h1 class="nav-link">Experience</h1>
+					</a>
+					<a href="" data-toggle="modal" data-target="#exampleModal" class="nav-item3">
+						<h1 class="nav-link">Projects</h1>
+					</a>
+					<a href="https://dev.to/vedantjain03" class="nav-item4" target="_blank" >
+						<h1 class="nav-link">Blog</h1>
+					</a>
+					<a href="mailto:vedantjainben10@gmail.com" target="_blank" class="nav-item5">
+						<h1 class="nav-link">Let's Connect!</h1>
+					</a>
+				</div>
+				<div class="footer">
+					<div class="social-icons animate">
+						<a href="https://leetcode.com/vedantjain09/" target="_blank"><img
+							src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+							style="width: 1.5rem;" alt=""></a>
+						<a href="https://twitter.com/vedantj_03" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://github.com/vedant-jain03" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/vedant-jain-781006145/" target="_blank"><i
+								class="fa fa-linkedin"></i></a>
+						<a href="https://dev.to/vedantjain03" target="_blank"><i class="fab fa-dev"></i></a>
+						<a href="mailto:vedantjainben10@gmail.com" target="_blank"><i
+								class="fa fa-envelope-open"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="social-icons animate">
+				<a href="https://leetcode.com/vedantjain09/" target="_blank"><img
+					src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+					style="width: 1.5rem;" alt=""></a>
+				<a href="https://twitter.com/vedantj_03" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://github.com/vedant-jain03" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/vedant-jain-781006145/" target="_blank"><i
+						class="fa fa-linkedin"></i></a>
+				<a href="https://dev.to/vedantjain03" target="_blank"><i class="fab fa-dev"></i></a>
+				<a href="mailto:vedantjainben10@gmail.com" target="_blank"><i class="fa fa-envelope-open"></i></a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- About Modal -->
+	<div class="modal fade" id="modal-about" tabindex="-1" role="dialog" aria-labelledby="modal-about-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-about-label">About</h2>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<!-- Left Col for Introduction -->
+							<div class="col-md-3" style="overflow: hidden; ">
+								<div class="person">
+									<div class="image">
+										<img class="img-responsive" src="profile.jpg" alt="vedant">
+									</div>
+									<h4>Vedant Jain</h4>
+									<h5>Open source enthusiast | Full stack Developer</h5>
+									<h5><a href="mailto:vedantjainben10@gmail.com" target="_blank"><i
+												class="fa fa-envelope-open"></i><span
+												style="padding-left: 8px;"></span>vedantjainben10@gmail.com</a></h5>
+									<h5><i class="fa fa-map-marker"></i><span style="padding-left: 8px;">Jabalpur,
+											Madhya Pradesh, India</span></h5>
+									<div class="social-icons" style="margin-left: -0.3125rem;">
+										<a href="https://leetcode.com/vedantjain09/" target="_blank"><img
+												src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+												style="width: 1rem;" alt=""></a>
+										<a href="https://github.com/vedant-jain03" target="_blank"><i
+												class="fa fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/vedant-jain-781006145/" target="_blank"><i
+												class="fa fa-linkedin"></i></a>
+										<a href="https://medium.com/@vedantjainben10" target="_blank"><i
+												class="fa fa-medium"></i></a>
+									</div>
+									<a href="https://drive.google.com/file/d/1zo7CGWw0_TwBFnXenFxQLyUG5suQ40ul/view?usp=sharing"
+										class="resume_button" target="_blank">Resume</a>
+								</div>
+							</div>
+
+							<!-- Right Col for Description -->
+							<div class="col-md-9">
+								<section>
+									<h3>Desciption</h3>
+									<p style="font-size: 17px;">
+										I am pursuing my bachelor's degree in computer science branch from Gyan Ganga
+										institute of technology and sciences. I am currently in 3rd year of college. I
+										am passionate about open-source, web development, and software technology. My
+										dream is to work for the betterment of the society throught coding.
+									</p>
+								</section>
+								<section>
+									<h3>Tech stack</h3>
+									<div class="item">
+										<div class="techstacks">
+											<div class="tstack"><span>C</span></div>
+											<div class="tstack"><span>C++</span></div>
+											<div class="tstack"><span>Javascript</span></div>
+											<div class="tstack"><span>HTML5</span></div>
+											<div class="tstack"><span>CSS3</span></div>
+											<div class="tstack"><span>SCSS</span></div>
+											<div class="tstack"><span>React.js</span></div>
+											<div class="tstack"><span>Node.js</span></div>
+											<div class="tstack"><span>Express.js</span></div>
+											<div class="tstack"><span>MongoDB</span></div>
+											<div class="tstack"><span>Ruby on Rails</span></div>
+											<div class="tstack"><span>Git</span></div>
+											<div class="tstack"><span>Github</span></div>
+											<div class="tstack"><span>Jquery</span></div>
+											<div class="tstack"><span>Bootstrap</span></div>
+											<div class="tstack"><span>MySQL</span></div>
+										</div>
+									</div>
+									<div class="item">
+										<h3>Education</h3>
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<h4>Gyan Ganga institute of technology and sciences, jabalpur</h4>
+												<p><span style="padding-left: 8px;"></span>Bachlor of technology in
+													Computer Science</a></p>
+												<p><span style="padding-left: 8px;">2019 - Present</span></p>
+												<p><span style="padding-left: 8px;">CGPA: 9.41</span></p>
+											</div>
+											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<h4>Vardhaman Public School, Itarsi</h4>
+												<p><span style="padding-left: 8px;"></span>12th in Physics Chemistry
+													Maths</a></p>
+												<p><span style="padding-left: 8px;">2017 - 2019</span></p>
+												<p><span style="padding-left: 8px;">Percent: 78%</span></p>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Experience Modal -->
+	<div class="modal fade" id="modal-experience" tabindex="-1" role="dialog" aria-labelledby="modal-experience-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-projects-label">Experience</h2>
+					</div>
+					<div class="modal-body">
+						<!-- Project Category 1 -->
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Open source</h3>
+							<p>
+								Listing my work in open source programs.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="circuitverse">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/CircuitVerse/CircuitVerse">Circuitverse</a>
+												</h3>
+												- My PR's: <a
+													href="https://github.com/pulls?q=+is%3Apr+author%3Avedant-jain03+archived%3Afalse+user%3ACircuitVerse+"
+													target="_blank"><i class="fa fa-github"></i></a>
+												<p class="text">- Circuitverse aims to provide a platform where circuits
+													can be designed and simulated using a graphical user interface.</p>
+												<p class="text">- Tech stack: Ruby on Rails, Javascript, Jquery, SCSS,
+													CSS.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="os2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Maintainer</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/vedant-jain03/Resume-Maker">Hacktoberfest 2021</a></h3>
+												<p class="text">- I was maintainer for my repository Resume maker. It is
+													used to build resume. It have predefined fields. It has
+													functionality to customize themes. It shows dynamic output.</p>
+												<p class="text">- 13+ contributed, 20 forks, 33 stars</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="os3">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://gssoc.girlscript.tech/">Girls script Summer of
+														Codes</a></h3>
+												- My PR's: <a
+													href="https://github.com/issues?q=is%3Amerged+is%3Apr+author%3Avedant-jain03+archived%3Afalse+label%3Agssoc21"
+													target="_blank"><i class="fa fa-github"></i></a>
+												<p class="text">- GirlScript Summer of Code is the 3 month long Open
+													Source program during summers conducted by GirlScript Foundation,
+													started in 2018.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="os2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Contributor</span>
+												<h3 class="title"><a target="_blank"
+														href="https://hacktoberfest.digitalocean.com/">Hacktoberfest
+														2021</a></h3>
+												<p class="text">- My 7 PR's got merged.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Community</h3>
+							<p>
+								Listing some Community I am part of.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="mlsa">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Beta</span>
+												<h3 class="title"><a target="_blank"
+														href="https://studentambassadors.microsoft.com/en-US/profile/116327">Microsoft
+														Learn Student Ambassador</a> </h3>
+												<p class="text">- The Microsoft Learn Student Ambassadors is a program
+													to sponsor students majoring in disciplines related to technology.
+												</p>
+												<p class="text">- I have been a host of an event where I guide folks to
+													start with react.</p>
+												<p class="text">- I have been a cohost of an event where I guide folks
+													about open-source,git and github.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="cm2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">Techical Core Lead</span>
+												<h3 class="title"><a target="_blank"
+														href=http://ecell.ggits.org/">Entrepreneurship-Cell(UDYAM
+														GGITS)</a></h3>
+												<p class="text">- Organize technical sessions, workshops,Manage
+													Inductions and Outreach.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Projects Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modal-about-label">
+		<div class="modal-dialog" role="document">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title" id="modal-projects-label">Projects</h2>
+					</div>
+					<div class="modal-body">
+						<!-- Project Category 1 -->
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Top Projects</h3>
+							<p>
+								Listing my top personal projects.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="project01">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">MERN stack, github, heroku</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/vedant-jain03/Go-with-flow">Go with
+														Flow</a>
+												</h3>
+												<p class="text">This is a MERN-based application that aims to create
+													Algorithms flowcharts. Students can make a project and can create an
+													algorithm flowchart for the same. Students can save the project in
+													progress and continue afterward. They can also download the
+													flowchart in png format. This is one of my best creations that took
+													me around 1 month to complete.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="project2">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">MERN stack, github, heroku</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/vedant-jain03/HashHub">HashHub</a></h3>
+												<p class="text">Initiative to provide students with free resources,
+													roadmaps, and software tools like resume maker,
+													certificate generator., also have blog implementation. I
+													have used MERN stack to build this.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="project3">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">React, github</span>
+												<h3 class="title"><a target="_blank"
+														href="https://vedant-jain03.github.io/Resume-Maker/">Resume maker</a></h3>
+												<p class="text">Resume Maker is tool where you can generate your resume for free. It has functionality like dynamic preview, color themes, responsive ,etc.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="project4">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">React, github</span>
+												<h3 class="title"><a target="_blank"
+														href="https://vedant-jain03.github.io/certificate-generator/">Certificate Generator</a></h3>
+												<p class="text">This is Certificate Generator which you can use to make e-certificate and download as a pdf and then you can distribute the certificates to the students.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="project5">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">React, github</span>
+												<h3 class="title"><a target="_blank"
+														href="https://vedant-jain03.github.io/Github-Profile-Readme-Generator/">Github Profile Readme Generator</a></h3>
+												<p class="text">This is Github Profile Readme Generator, Made using React. You can fill the input field as you want, you can select add-on feature you want to see in your profile. The Readme final Code is below , you just have to copy and paste to your readme file. If you like the project Kindly Star the Project</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project2 card" id="project6">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">React, github</span>
+												<h3 class="title"><a target="_blank"
+														href="https://vedant-jain03.github.io/smart-pdf/">Smart PDF</a></h3>
+												<p class="text">Use this tool to save your valuable time. You just have to paste your content, add the page and Download the pdf.</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 1.875rem;">
+							<h3>Others</h3>
+							<p>
+								Listing some Other repository/projects I have made.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="dsa1">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">DSA, C++</span>
+												<h3 class="title"><a target="_blank"
+														href="https://github.com/vedant-jain03/Dynamic_programming-CS">Dynamic_programming-CS
+													</a> </h3>
+												<p class="text">DP is always being considered the toughest in DSA. I have been practicing it and honestly enjoying it. I thought if some way makes it easy for me to recognize patterns in DP maybe it can provide easiness to you as well.I have made a repo. of 50+ questions I follow, it has questions from both of the lectures listed above and solutions in C++.
+												</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project1 card" id="other01">
+									<div class="wrapper">
+										<div class="data">
+											<div class="content">
+												<span class="type">React, github</span>
+												<h3 class="title"><a target="_blank"
+														href="https://vedant-jain03.github.io/Repo-Readme-Md-Generator/">Github Repository Md Generator
+													</a> </h3>
+												<p class="text">This is Repository Readme.md Generator which you can use to create your repository readme which represent your repo in more creative way.
+												</p>
+												<label for="show-menu" class="menu-button"><span></span></label>
+											</div>
+
+											<input type="checkbox" id="show-menu" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap Scripts -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+		integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+		integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+		crossorigin="anonymous"></script>
+	<!-- Sketch.js -->
+	<script src="assets/js/sketch.min.js"></script>
+
+	<!-- Project JS File -->
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
